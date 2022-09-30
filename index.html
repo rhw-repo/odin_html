@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>HTML form app test page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Desktop test page for HTML form for later use in app</h1>
+    <form action="/my-handling-form-page" method="post">
+      <fieldset>
+        <legend>Enter your login details here</legend>
+        <!--<li> items provide structure-->
+        <ul>
+          <!--id associates form control with its label inc. mouse / trackpad / touch device clicks on label-->
+          <li>
+            <label for="mail">E-mail:</label>
+            <!--pattern gives error message if email not character@character.domain-->
+            <input type="email" id="mail" name="user_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+          </li>
+          <li>
+            <label for="passwd">Password:</label>
+            <!--pattern gives error message if not contain at least one number and 1 uppercase and lowercase number in min 8 character password-->
+            <input type="password" id="pwd" name="user_pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
+          </li>
+          <li class=" button">
+            <button type="submit">Send your message</button>
+          </li>
+
+        </ul>
+      </fieldset>
+
+    </form>
