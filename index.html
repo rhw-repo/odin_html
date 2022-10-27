@@ -5,33 +5,47 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>HTML form app test page</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500&family=Open+Sans:wght@400;500;700&display=swap');
+  </style>
 </head>
 
 <body>
-  <div class="container">
-    <h1>Desktop test page for HTML form for later use in app</h1>
-    <form action="/my-handling-form-page" method="post">
-      <fieldset>
-        <legend>Enter your login details here</legend>
+  <div class="header">
+    <h3>Content Management App</h3>
+  </div>
+
+
+  <form action="/my-handling-form-page" method="post">
+    <form class="container">
+      <div class="container"><!--legend>Enter your login details here</legend-->
         <!--<li> items provide structure-->
+        <h1>Welcome. Log in here:</h1>
+        <p>If you already have an account, enter both <br> the email and password you made it with</p>
         <ul>
-          <!--id associates form control with its label inc. mouse / trackpad / touch device clicks on label-->
           <li>
-            <label for="mail">E-mail:</label>
+            <label for="mail">E-mail*</label>
             <!--pattern gives error message if email not character@character.domain-->
-            <input type="email" id="mail" name="user_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" />
+            <input type="email" id="mail" name="user_email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address without any spaces" placeholder="someone@something.com" required />
           </li>
           <li>
-            <label for="passwd">Password:</label>
+            <label for="passwd">Password*</label>
             <!--pattern gives error message if not contain at least one number and 1 uppercase and lowercase number in min 8 character password-->
-            <input type="password" id="pwd" name="user_pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" />
+            <input type="password" id="pwd" name="user_pwd" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" maxlength="12" title="Must contain at least one number, one uppercase and one lowercase character"  required />
           </li>
-          <li class=" button">
-            <button type="submit">Send your message</button>
+          <p>Forgotten your password?</p>
+          <li class="button">
+            <button type="submit" id="login_btn">Login</button>
           </li>
-
+          <h3>No account yet? No problem:</h3>
+          <li class="button">
+            <button type="submit" id="new_act_btn">Create new account</button>
+          </li>
         </ul>
-      </fieldset>
+      </div>
+  </form>
+<div class="footer">&copy R Westnidge Brown, 2022</div>
+</body>
 
-    </form>
+</html>

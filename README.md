@@ -1,14 +1,28 @@
-Forms are the basis of a content management app which will be built using React.js
+Form pages.
 
-app_feature branch = experimental HTML forms & CSS, code blocks can be reused
+Skills = HTML, CSS. 
+App feature branch = adapting excercises to create code blocks for later reuse in app under construction, from design phase to build. 
 
-Main branch here = first form practice exercise, with The Odin Project's Intermediate HTML module 'Forms' 
+
+Resources: The Odin Project's Intermediate HTML module 'Forms'
+Figma files:
+
+Current iteration, next iteration focus = updating dashboard 'Item List View'
+
+https://www.figma.com/file/LEdQ1tVoF9jmZSksUPIJ1O/Content-Mgmt-App-Iteration-013.10.2022?node-id=0%3A1
+
+Previous iterations
+
+Static user journey flows as starting point that could have been developed into a full protoype:
+https://www.figma.com/file/wLOnknD1SgH0t0LSTPX258/Content-Mgmt-App-Prototype-(Short-no-link-creation-apps)
 
 
-Skills = HTML, some CSS. 
+https://www.figma.com/file/L7U6INjJs3ixpcS2wQ8WSo/Content-Mgmt-App-Prototype
 
-Learning module & resources:
-https://www.theodinproject.com/paths/full-stack-javascript/courses/intermediate-html-and-css#forms
 
-CSS https://developer.mozilla.org/en-US/docs/Learn/Forms/Your_first_form
+
+
+=======
+
+
 
